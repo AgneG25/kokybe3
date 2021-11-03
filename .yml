@@ -1,0 +1,2 @@
+- name: Action SonarQube
+  uses: vtex/action-sonarqube@v1.1.0
