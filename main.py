@@ -1,8 +1,8 @@
-def draw_O(self, logical_position):
-        logical_position = np.array(logical_position)
+def drawZoro(self, logicalPosition):
         # logical_position = grid value on the board
         # grid_position = actual pixel values of the center of the grid
-        grid_position = self.convert_logical_to_grid_position(logical_position)
-        self.canvas.create_oval(grid_position[0] - symbol_size, grid_position[1] - symbol_size,
-                                grid_position[0] + symbol_size, grid_position[1] + symbol_size, width=symbol_thickness,
+        logicalPositionArray = np.array(logicalPosition)
+        gridPosition = self.convert_logical_to_grid_position(logicalPosition)
+        self.canvas.create_oval(gridPosition[0] - symbolSize, gridPosition[1] - symbolSize,
+                                gridPosition[0] + symbolSize, gridPosition[1] + symbolSize, width=symbolThickness,
                                 outline=symbol_O_color)
